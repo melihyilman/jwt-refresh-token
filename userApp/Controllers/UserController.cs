@@ -34,10 +34,6 @@ namespace userApp.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            var aa = Request;
-            var cookie = Request.Cookies.FirstOrDefault(x => x.Key == "refreshToken");
-            var isAuthanticated = userRepository.FindByToken(cookie.Value);
-            var bb = User;
             return View();
         }
 
