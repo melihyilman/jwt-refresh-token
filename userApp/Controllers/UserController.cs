@@ -13,7 +13,7 @@ using userApp.Repository;
 
 namespace userApp.Controllers
 {
-   [userApp.Controllers.Utils.Authorize]
+  
     public class UserController : Controller
     {
         private readonly UserRepository userRepository;
@@ -25,11 +25,13 @@ namespace userApp.Controllers
 
         }
         // GET: UserController
+        [userApp.Controllers.Utils.Authorize]
         public ActionResult Index()
         {
             return View(userRepository.FindAll());
         }
         [AllowAnonymous]
+        [HttpGet]
         public IActionResult Create()
         {
             var aa = Request;
@@ -55,6 +57,7 @@ namespace userApp.Controllers
 
         // GET: UserController/Edit/5
         //[Authorize(Policy = "User")]
+        [userApp.Controllers.Utils.Authorize]
         public ActionResult Edit(Guid? id)
         {
             if (id == null)
@@ -72,6 +75,7 @@ namespace userApp.Controllers
         // POST: UserController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [userApp.Controllers.Utils.Authorize]
         public ActionResult Edit(User obj)
         {
             if (ModelState.IsValid)
