@@ -18,7 +18,7 @@ Links :
 
 # User SQL Query
 
-# 
+# Table create query
 CREATE TABLE Users (
     id uuid DEFAULT uuid_generate_v4 (), 
     created date, 
@@ -32,4 +32,4 @@ CREATE TABLE Users (
     token_expiration date,
     refresh_token_expiration date 
 ); 
-# 
+#  //
