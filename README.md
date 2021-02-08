@@ -12,6 +12,6 @@ Links :
     # if logged in then, response should be user 
     
     
-# List Of User : https://localhost:44318/User/Index
+# List Of Users : https://localhost:44318/User/Index
 
 # Token refresh only when user click login button
