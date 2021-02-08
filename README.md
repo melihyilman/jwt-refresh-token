@@ -1,5 +1,6 @@
 # jwt-refresh-token
 dependencies: .net core 3.1.10
+Database is configured with demo, it has configured, you can download and start app
 
 Links : 
 # Default: https://localhost:44318/Login/Login
