@@ -15,3 +15,19 @@ Links :
 # List Of Users : https://localhost:44318/User/Index
 
 # Token refresh only when user click login button
+
+# User SQL Query
+
+#CREATE TABLE Users (
+    id uuid DEFAULT uuid_generate_v4 (), 
+    created date, 
+    modified date,
+    username varchar,
+    password varchar,
+    name varchar,
+    email varchar,
+    salt varchar,
+    refresh_token varchar,
+    token_expiration date,
+    refresh_token_expiration date 
+);#
