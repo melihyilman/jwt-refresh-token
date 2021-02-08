@@ -18,7 +18,8 @@ Links :
 
 # User SQL Query
 
-# CREATE TABLE Users (
+# 
+CREATE TABLE Users (
     id uuid DEFAULT uuid_generate_v4 (), 
     created date, 
     modified date,
